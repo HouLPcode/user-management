@@ -8,7 +8,7 @@ import (
 )
 
 type Database struct {
-	Mysql   *gorm.DB
+	Mysql *gorm.DB
 }
 
 var DB *Database
@@ -46,4 +46,3 @@ func setupDB(db *gorm.DB) {
 func (db *Database) Close() {
 	DB.Mysql.Close()
 }
-

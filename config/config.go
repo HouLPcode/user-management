@@ -46,10 +46,8 @@ type Database struct {
 var config *Config
 var MyDatabase Database
 
-func newConfig(){
-	config = &Config{
-
-	}
+func newConfig() {
+	config = &Config{}
 }
 
 func init() {
@@ -60,10 +58,10 @@ func init() {
 	MyDatabase.NewMysql()
 }
 
-func (d *Database)NewMysql(){
-	dburl := fmt.Sprintf("%s:%s@%s(%s)/%s?%s", config.MysqlConfig.UserName,config.MysqlConfig.Password,config.MysqlConfig.Net,config.MysqlConfig.Host,config.MysqlConfig.Database,config.MysqlConfig.Parameters)
+func (d *Database) NewMysql() {
+	dburl := fmt.Sprintf("%s:%s@%s(%s)/%s?%s", config.MysqlConfig.UserName, config.MysqlConfig.Password, config.MysqlConfig.Net, config.MysqlConfig.Host, config.MysqlConfig.Database, config.MysqlConfig.Parameters)
 	var err error
-	d.Mysql ,err = gorm.Open("mysql", dburl)
+	d.Mysql, err = gorm.Open("mysql", dburl)
 	if err != nil {
 		log.Fatalf("数据库连接异常：%v", err)
 		panic(err)
@@ -84,7 +82,6 @@ func (c *Config) initMysql() {
 		Parameters:      "charset=utf8&parseTime=True&loc=Local",
 	}
 
-
 }
 func (c *Config) initMgo() {
 	c.MgoConfig = MgoConfig{}
@@ -97,4 +94,3 @@ func (c *Config) initRedis() {
 func NewConfig() *Config {
 	return config
 }
-
