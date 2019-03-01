@@ -16,12 +16,19 @@ github.com/eknkc/amber/parser
 github.com/fatih/structs
 # github.com/flosch/pongo2 v0.0.0-20181225140029-79872a7b2769
 github.com/flosch/pongo2
+# github.com/go-sql-driver/mysql v1.4.1
+github.com/go-sql-driver/mysql
 # github.com/iris-contrib/blackfriday v2.0.0+incompatible
 github.com/iris-contrib/blackfriday
 # github.com/iris-contrib/formBinder v0.0.0-20190104093907-fbd5963f41e1
 github.com/iris-contrib/formBinder
 # github.com/iris-contrib/go.uuid v2.0.0+incompatible
 github.com/iris-contrib/go.uuid
+# github.com/jinzhu/gorm v1.9.2
+github.com/jinzhu/gorm
+github.com/jinzhu/gorm/dialects/mysql
+# github.com/jinzhu/inflection v0.0.0-20180308033659-04140366298a
+github.com/jinzhu/inflection
 # github.com/json-iterator/go v1.1.5
 github.com/json-iterator/go
 # github.com/juju/errors v0.0.0-20181118221551-089d3ea4e4d5
@@ -30,28 +37,28 @@ github.com/juju/errors
 github.com/kataras/golog
 # github.com/kataras/iris v11.1.1+incompatible
 github.com/kataras/iris
-github.com/kataras/iris/cache
 github.com/kataras/iris/context
+github.com/kataras/iris/middleware/logger
+github.com/kataras/iris/middleware/recover
+github.com/kataras/iris/cache
 github.com/kataras/iris/core/errors
 github.com/kataras/iris/core/handlerconv
 github.com/kataras/iris/core/host
 github.com/kataras/iris/core/netutil
 github.com/kataras/iris/core/router
-github.com/kataras/iris/middleware/logger
-github.com/kataras/iris/middleware/recover
 github.com/kataras/iris/view
-github.com/kataras/iris/cache/client
 github.com/kataras/iris/core/memstore
 github.com/kataras/iris/macro
+github.com/kataras/iris/cache/client
 github.com/kataras/iris/macro/handler
 github.com/kataras/iris/macro/interpreter/ast
 github.com/kataras/iris/macro/interpreter/lexer
+github.com/kataras/iris/macro/interpreter/parser
 github.com/kataras/iris/cache/cfg
 github.com/kataras/iris/cache/client/rule
 github.com/kataras/iris/cache/entry
 github.com/kataras/iris/cache/ruleset
 github.com/kataras/iris/cache/uri
-github.com/kataras/iris/macro/interpreter/parser
 github.com/kataras/iris/macro/interpreter/token
 # github.com/kataras/pio v0.0.0-20190103105442-ea782b38602d
 github.com/kataras/pio
@@ -80,5 +87,7 @@ golang.org/x/net/html
 golang.org/x/net/html/atom
 # golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a
 golang.org/x/sys/unix
+# google.golang.org/appengine v1.4.0
+google.golang.org/appengine/cloudsql
 # gopkg.in/yaml.v2 v2.2.2
 gopkg.in/yaml.v2

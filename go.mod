@@ -8,9 +8,12 @@ require (
 	github.com/eknkc/amber v0.0.0-20171010120322-cdade1c07385 // indirect
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/flosch/pongo2 v0.0.0-20181225140029-79872a7b2769 // indirect
+	github.com/go-sql-driver/mysql v1.4.1 // indirect
 	github.com/iris-contrib/blackfriday v2.0.0+incompatible // indirect
 	github.com/iris-contrib/formBinder v0.0.0-20190104093907-fbd5963f41e1 // indirect
 	github.com/iris-contrib/go.uuid v2.0.0+incompatible // indirect
+	github.com/jinzhu/gorm v1.9.2
+	github.com/jinzhu/inflection v0.0.0-20180308033659-04140366298a // indirect
 	github.com/json-iterator/go v1.1.5 // indirect
 	github.com/kataras/golog v0.0.0-20180321173939-03be10146386 // indirect
 	github.com/kataras/iris v11.1.1+incompatible
@@ -23,4 +26,5 @@ require (
 	github.com/ryanuber/columnize v2.1.0+incompatible // indirect
 	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
 	golang.org/x/crypto v0.0.0-20190227175134-215aa809caaf // indirect
+	google.golang.org/appengine v1.4.0 // indirect
 )
